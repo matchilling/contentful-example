@@ -1,0 +1,10 @@
+type Query {
+    entityById(id: ID!): Entity
+    entityByName(name: String): [Entity]
+}
+
+type Entity {
+    id: String!
+    name: String
+    type: String
+}
